@@ -1,0 +1,116 @@
+/* #web_bg {
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+} */
+#article-container.post-content h1:before,
+#article-container.post-content h2:before,
+#article-container.post-content h3:before,
+#article-container.post-content h4:before,
+#article-container.post-content h5:before,
+#article-container.post-content h6:before{
+  position: absolute;
+  display: inline-block;
+  margin-left: -25px;
+  font-size: 20px;
+  top: calc(50% - 7px);
+  line-height: 1;
+  font-family: 'Font Awesome 5 Free';
+  content: '\f6ad';
+  color: #f47466;
+   /* 回形针 */
+  /*content: '\f0c1' '\f863' '\f0a3'*/
+  line-height: 1;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  /* 若要使用风车效果，请去掉下面的注释 */
+  animation: avatar_turn_around 1s linear infinite;
+}
+#article-container.post-content h1:before{
+  color: #ef50a8;
+  margin-left: -1.55rem;
+  font-size: 1.3rem;
+}
+#article-container.post-content h2:before{
+  color: #fb7061;
+  margin-left: -1.35rem;
+  content: '\f69a';
+  font-size: 1.1rem;
+}
+#article-container.post-content h3:before{
+  color: #ffbf00;
+  margin-left: -1.22rem;
+  content: '\f6ad';
+  font-size: 0.95rem;
+}
+#article-container.post-content h4:before{
+  color: #a9e000;
+  margin-left: -1.05rem;
+  content: '\f863';
+  font-size: 0.8rem;
+}
+#article-container.post-content h5:before{
+  color: #57c850;
+  margin-left: -0.9rem;
+  font-size: 0.7rem;
+}
+#article-container.post-content h6:before{
+  color: #5ec1e0;
+  margin-left: -0.9rem;
+  font-size: 0.66rem;
+}
