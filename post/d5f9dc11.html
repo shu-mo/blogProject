@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>mathjax的常用语法简介 | Shu Mo</title><meta name="author" content="Shu Mo"><meta name="copyright" content="Shu Mo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="注意：用这个数学公式必须要在外面先写一层这个包裹 $$ $$  1.行内常用公式   查看行内常用公式                               符号释义用例效果^上标x^2x^2_下标H_2OH_2O{}多个上下标x^{20}_{40}x^{20}_{40}\text{文字}文字显示\text{如果}\text{如果}$ 公式1 $插入公式\text{如果$x&lt;2$}\t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mathjax的常用语法简介">
+<meta property="og:url" content="http://example.com/post/d5f9dc11.html">
+<meta property="og:site_name" content="Shu Mo">
+<meta property="og:description" content="注意：用这个数学公式必须要在外面先写一层这个包裹 $$ $$  1.行内常用公式   查看行内常用公式                               符号释义用例效果^上标x^2x^2_下标H_2OH_2O{}多个上下标x^{20}_{40}x^{20}_{40}\text{文字}文字显示\text{如果}\text{如果}$ 公式1 $插入公式\text{如果$x&lt;2$}\t">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/tagImg6.jpg">
+<meta property="article:published_time" content="2022-11-15T10:24:18.000Z">
+<meta property="article:modified_time" content="2022-11-16T02:07:45.595Z">
+<meta property="article:author" content="Shu Mo">
+<meta property="article:tag" content="mathjax">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/tagImg6.jpg"><link rel="shortcut icon" href="/img/blogLog.png"><link rel="canonical" href="http://example.com/post/d5f9dc11"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?439a0d0abeb31dd8f338efd8266c999b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'mathjax的常用语法简介',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-11-16 10:07:45'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/blogLog.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/tagImg6.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Shu Mo</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">mathjax的常用语法简介</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-15T10:24:18.000Z" title="发表于 2022-11-15 18:24:18">2022-11-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-16T02:07:45.595Z" title="更新于 2022-11-16 10:07:45">2022-11-16</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">96</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="mathjax的常用语法简介"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="note danger modern no-icon flat"><p>注意：用这个数学公式必须要在外面先写一层这个包裹 <code>$$ $$</code></p>
+</div>
+<div class="note info simple"><p><strong>1.行内常用公式</strong></p>
+</div>
+<details class="folding-tag" cyan><summary> 查看行内常用公式 </summary>
+              <div class="content">
+              <div class="table-container"><table><thead><tr><th style="text-align:center">符号</th><th style="text-align:center">释义</th><th style="text-align:center">用例</th><th style="text-align:center">效果</th></tr></thead><tbody><tr><td style="text-align:center">^</td><td style="text-align:center">上标</td><td style="text-align:center">x^2</td><td style="text-align:center"><script type="math/tex">x^2</script></td></tr><tr><td style="text-align:center">_</td><td style="text-align:center">下标</td><td style="text-align:center">H_2O</td><td style="text-align:center"><script type="math/tex">H_2O</script></td></tr><tr><td style="text-align:center">{}</td><td style="text-align:center">多个上下标</td><td style="text-align:center">x^{20}_{40}</td><td style="text-align:center"><script type="math/tex">x^{20}_{40}</script></td></tr><tr><td style="text-align:center">\text{文字}</td><td style="text-align:center">文字显示</td><td style="text-align:center">\text{如果}</td><td style="text-align:center"><script type="math/tex">\text{如果}</script></td></tr><tr><td style="text-align:center"><code>$</code> 公式1 <code>$</code></td><td style="text-align:center">插入公式</td><td style="text-align:center">\text{如果$x&lt;2$}</td><td style="text-align:center"><script type="math/tex">\text{如果$ x<2 $}</script></td></tr><tr><td style="text-align:center">\ldots</td><td style="text-align:center">与文本底线对齐的省略号</td><td style="text-align:center">x_1x2{\ldots}x_n</td><td style="text-align:center"><script type="math/tex">x_1x2{\ldots}x_n</script></td></tr><tr><td style="text-align:center">\cdots</td><td style="text-align:center">与文本中线对齐的省略号</td><td style="text-align:center">x_1x2{\cdots}x_n</td><td style="text-align:center"><script type="math/tex">x_1x2{\cdots}x_n</script></td></tr><tr><td style="text-align:center">\sqrt[根指数，省略时为2]{被开方数}</td><td style="text-align:center">开方</td><td style="text-align:center">\sqrt{3}、\sqrt[3]{8}</td><td style="text-align:center"><script type="math/tex">\sqrt{3}、\sqrt[3]{8}</script></td></tr><tr><td style="text-align:center">\frac{分子}{分母}</td><td style="text-align:center">分数1</td><td style="text-align:center">\frac{1}{3}</td><td style="text-align:center"><script type="math/tex">\frac{1}{3}</script></td></tr><tr><td style="text-align:center">分子\over 分母</td><td style="text-align:center">分数2</td><td style="text-align:center">\frac{1}{3}*12 \over 16</td><td style="text-align:center"><script type="math/tex">\frac{1}{3}*12 \over 16</script></td></tr><tr><td style="text-align:center">\int_{积分下限}^{积分上限}(被积分表达式)</td><td style="text-align:center">积分</td><td style="text-align:center">\int_{21}^{61}(23)</td><td style="text-align:center"><script type="math/tex">\int_{21}^{61}(23)</script></td></tr><tr><td style="text-align:center">\sum_{下表达式}^{上表达式}{累加表达式}</td><td style="text-align:center">累加</td><td style="text-align:center">\sum_{i=1}^{n+1}{\frac{1}{i}}</td><td style="text-align:center"><script type="math/tex">\sum_{i=1}^{n+1}{\frac{1}{i}}</script></td></tr><tr><td style="text-align:center">\mid</td><td style="text-align:center">分割</td><td style="text-align:center">123 \mid 890</td><td style="text-align:center"><script type="math/tex">123 \mid 890</script></td></tr><tr><td style="text-align:center">, ; \quad \qquad</td><td style="text-align:center">不同宽度的空格</td><td style="text-align:center">a,b \mid a;b \mid aa \quad bb \mid aa \qquad bb</td><td style="text-align:center"><script type="math/tex">a,b \mid a;b \mid aa \quad bb \mid aa \qquad bb</script></td></tr><tr><td style="text-align:center">\color{颜色}{文字}</td><td style="text-align:center">更改字体颜色</td><td style="text-align:center">\color{blueviolet}{文字颜色}</td><td style="text-align:center"><script type="math/tex">\color{blueviolet}{文字颜色}</script></td></tr></tbody></table></div>
+              </div>
+            </details>
+<div class="note info simple"><p><strong>2.行间常用公式</strong></p>
+</div>
+<details class="folding-tag" cyan><summary> 查看行间常用公式 </summary>
+              <div class="content">
+              <p><strong>1.分段函数格式为<code>f(x)=\begin{cases}语句1\\语句2\\...\end{cases}</code></strong><br>)1.1 用例<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$$ </span><br><span class="line">  f(n)=\begin&#123;cases&#125;</span><br><span class="line">  n/2, &amp; \text&#123;如果$ x&lt;=2 $&#125;\\</span><br><span class="line">  3n+1, &amp; \text&#123;如果$ x&gt;2 $&#125;</span><br><span class="line">  \end&#123;cases&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure><br>)1.2 效果</p><div class="note modern"><script type="math/tex; mode=display">  f(n)=\begin{cases}  n/2, & \text{如果$ x<=2 $}\\  3n+1, & \text{如果$ x>2 $}  \end{cases}</script></div>**2.大括号 中括号 小括号**<div class="tip warning faa-parent animated-hover"><p class="faa-horizontal"><span class="p red">()、[]、{}</span>表示的即是符号本身，使用<span class="p red">\{\}来表示{}</span>。但是如果要显示大号的括号时，需要使用<span class="p red">\left</span>和<span class="p red">\right</span>命令</p></div>)2.1 用例  2.1.1 正常大中小括号用例<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">f([\frac&#123;x+1 \over&#123;(8/2)\&#123;x,y\&#125;&#125;&#125;&#123;666&#125;]^&#123;n+1&#125;)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>  2.1.2 效果<div class="note modern"><script type="math/tex; mode=display">f([\frac{x+1 \over{(8/2)\{x,y\}}}{666}]^{n+1})</script></div>  2.2.1 大括号用例<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">f\left(</span><br><span class="line">  \left[</span><br><span class="line">    \frac&#123;x+1 \over&#123;(8/2)\&#123;x,y\&#125;&#125;&#125;&#123;666&#125;</span><br><span class="line">  \right]^&#123;n+1&#125;</span><br><span class="line">\right)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>  2.2.2 效果<div class="note modern"><script type="math/tex; mode=display">f\left(  \left[    \frac{x+1 \over{(8/2)\{x,y\}}}{666}  \right]^{n+1}\right)</script></div><p><strong>3.添加删除线</strong></p><div class="note warning no-icon flat"><p>使用删除线功能必须使用<span class="p red"><strong>行间公式</strong></span>，删除线分为<span class="p red"><strong>片段删除线</strong></span>和<span class="p red"><strong>整段删除线</strong></span>，样式比较多，在这里我只列举一种比较常用的<strong>水平删除线</strong>，它属于整段删除线的一种。<br><strong>整段删除线</strong>使用<span class="p red">\require{enclose}</span>来显示，声明整段删除线后，使用<span class="p red">\enclose{删除线效果}{字符}</span>来实现删除线效果，而水平删除线效果用关键字<span class="p red">horizontalstrike</span>。</p></div>  3.1 实例<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\require&#123;enclose&#125;\begin&#123;array&#125;&#123;&#125;</span><br><span class="line">\enclose&#123;horizontalstrike&#125;&#123;x+y&#125;\\</span><br><span class="line">\enclose&#123;horizontalstrike&#125;&#123;x*y&#125;\\</span><br><span class="line">\end&#123;array&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>  3.2 效果<div class="note modern"><script type="math/tex; mode=display">\require{enclose}\begin{array}{}\enclose{horizontalstrike}{x+y}\\\enclose{horizontalstrike}{x*y}\\\end{array}</script></div>
+              </div>
+            </details>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Shu Mo</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/post/d5f9dc11.html">http://example.com/post/d5f9dc11.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Shu Mo</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/mathjax/">mathjax</a></div><div class="post_share"><div class="social-share" data-image="/img/tagImg6.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/post/ae01190e.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/tagImg11.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hexo中butterfly主题配置</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/blogLog.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Shu Mo</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://blog.csdn.net/weixin_44543463" target="_blank" title="fab fa-cuttlefish"><i class="CSDN"></i></a><a class="social-icon" href="https://github.com/HuffieMa" target="_blank" title="fab fa-github"><i class="GitHub"></i></a><a class="social-icon" href="mailto:haofei_ma@163.com" target="_blank" title="fa fa-envelope"><i class="E-Mail"></i></a><a class="social-icon" href="https://www.zhihu.com/people/ma-hao-fei-2" target="_blank" title="fab fa-zhihu"><i class="知乎"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">新推荐二个翻译软件</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/d5f9dc11.html" title="mathjax的常用语法简介"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/tagImg6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mathjax的常用语法简介"/></a><div class="content"><a class="title" href="/post/d5f9dc11.html" title="mathjax的常用语法简介">mathjax的常用语法简介</a><time datetime="2022-11-15T10:24:18.000Z" title="发表于 2022-11-15 18:24:18">2022-11-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/ae01190e.html" title="hexo中butterfly主题配置"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/tagImg11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo中butterfly主题配置"/></a><div class="content"><a class="title" href="/post/ae01190e.html" title="hexo中butterfly主题配置">hexo中butterfly主题配置</a><time datetime="2022-11-13T10:45:06.000Z" title="发表于 2022-11-13 18:45:06">2022-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/3219ae65.html" title="pc端线下词典"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/tagImg10.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pc端线下词典"/></a><div class="content"><a class="title" href="/post/3219ae65.html" title="pc端线下词典">pc端线下词典</a><time datetime="2022-11-11T01:33:29.000Z" title="发表于 2022-11-11 09:33:29">2022-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/4a17b156.html" title="Hello World"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/tagImg6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/post/4a17b156.html" title="Hello World">Hello World</a><time datetime="2022-11-10T12:14:46.821Z" title="发表于 2022-11-10 20:14:46">2022-11-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By Shu Mo</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a  target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><img  class="icp-icon"  src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/icp.png"><span>津ICP备2021000769号-2</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            if (node.hasAttribute('display')) {
+              btf.wrap(node, 'div', { class: 'mathjax-overflow' })
+            } else {
+              btf.wrap(node, 'span', { class: 'mathjax-overflow' })
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script src="/js/custom/custom.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>

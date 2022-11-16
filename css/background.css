@@ -66,6 +66,7 @@
   margin-left: -25px;
   font-size: 20px;
   top: calc(50% - 7px);
+  /* background-color: blueviolet; */
   line-height: 1;
   font-family: 'Font Awesome 5 Free';
   content: '\f6ad';
@@ -122,4 +123,26 @@
 }
 #footer:before {
   background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f07831;
+  /* background-image: -webkit-linear-gradient( 45deg, #a674f3 0%,#a674f3 0%, #077ff3 25%,#077ff3 25%, #ff69b4 50%,#ff69b4 50%, #5246e2 75%,#5246e2 75%, transparent); */
+  background-image: -webkit-linear-gradient( 45deg,  #077ff3 0%,#077ff3 25%, #ff69b4 26%,#ff69b4 50%, #5246e2 51%,#5246e2 75%, transparent 76%,transparent);
+  /* background: -webkit-linear-gradient(ellipse 100% 100% at 80% 90%,#077ff3, #a674f3,#aa1200); */
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49B1F5;
 }
