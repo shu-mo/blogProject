@@ -152,6 +152,9 @@
   background-color: #ef50a8;
 
 }
+#article-container .my_music_style{
+  position: relative;
+}
 #article-container .my_about_icon_style{
   color:#5246e2;
 }
@@ -167,7 +170,9 @@ svg.icon {
   list-style-type: circle;
   list-style: telugu
 }
-
+#article-container p{
+  margin:0;
+}
 #article-container li::marker {
   color: #e83e65;
   font-weight: 600;
