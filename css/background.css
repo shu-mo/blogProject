@@ -152,3 +152,24 @@
   background-color: #ef50a8;
 
 }
+#article-container .my_about_icon_style{
+  color:#5246e2;
+}
+
+svg.icon {
+  width: 1em; height: 1em;
+  /* width和height定义图标的默认宽度和高度*/
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+#article-container ul li{
+  list-style-type: circle;
+  list-style: telugu
+}
+
+#article-container li::marker {
+  color: #e83e65;
+  font-weight: 600;
+  font-size: 1.05em;
+}
