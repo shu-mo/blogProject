@@ -184,6 +184,7 @@ svg.icon {
   left: 50%;
   transform: translate(-50%,-50%);
   background-color:rgba(0,0,0, .4);
+  background-image:radial-gradient(ellipse 150% 114% at 50% 100%,#077ff3, #a674f3,#581d16);
   color:#fff;
   font-weight: 700;
   font-size: 18px;
@@ -227,3 +228,22 @@ button,
 img {
   cursor: url(https://bu.dusays.com/2022/05/17/6283c376afcfc.png), auto
 }
+
+.my_img_warp{
+  background: #fff;
+  box-sizing: border-box;
+  padding: 10px;
+  background-image: linear-gradient(45deg, #ac19db 0%, #5986b1 28%,#2c9d76 60%, #e2da28 100%);
+  animation: img-loaging-anis 3s ease-in-out 0s infinite alternate;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+  
+.my_img_warp .my_img_loading{
+  width: 90px;
+  height: 90px;
+ /* animation: img-loaging-anis 3s ease-in-out 0s infinite alternate; */
+  border-radius: 50%;
+}
+    

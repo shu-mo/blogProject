@@ -30,7 +30,7 @@ document.addEventListener('visibilitychange', function() {
     }
     let bodyWrap=document.getElementById('body-wrap')
     let dialogS =  document.createElement('div')
-    dialogS.innerHTML='欢迎再次来到' +'<span class="dialog_name">'+OriginTitle+"博客"+'</span>' 
+    dialogS.innerHTML='欢迎再次来到' +'<span class="dialog_name">'+OriginTitle+"博客"+'</span>'+'<br>'+'望你找到你所需' 
     dialogS.setAttribute('class','my_dialog_style')
     dialogS.setAttribute('id','my_dialog_id')
     let btns1 = document.createElement('span')
