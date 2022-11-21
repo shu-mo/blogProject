@@ -178,3 +178,52 @@ svg.icon {
   font-weight: 600;
   font-size: 1.05em;
 }
+.my_dialog_style{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color:rgba(0,0,0, .4);
+  color:#fff;
+  font-weight: 700;
+  font-size: 18px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 10px;
+}
+.my_dialog_style .dialog_name{
+  color: red;
+  margin-left: 10px
+}
+.my_dialog_style .my_dialog_btn_style{
+  /* display:block; */
+  color:#077ff3;
+  font-size: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background-color: #B8DCFF;
+  padding:10px;
+  border-radius: 50%;
+}
+
+/* 鼠标样式代码 */
+body {
+  cursor: url(https://bu.dusays.com/2022/05/17/6283c365d20dd.png), auto;
+}
+
+.hide-block>.hide-button.open,
+.hide-inline>.hide-button.open {
+  display: block
+}
+
+a,
+button,
+img {
+  cursor: url(https://bu.dusays.com/2022/05/17/6283c376afcfc.png), auto
+}
