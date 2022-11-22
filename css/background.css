@@ -215,7 +215,7 @@ svg.icon {
 
 /* 鼠标样式代码 */
 body {
-  cursor: url(https://bu.dusays.com/2022/05/17/6283c365d20dd.png), auto;
+  cursor: url(/img/6283c365d20dd.png), auto;
 }
 
 .hide-block>.hide-button.open,
@@ -226,7 +226,7 @@ body {
 a,
 button,
 img {
-  cursor: url(https://bu.dusays.com/2022/05/17/6283c376afcfc.png), auto
+  cursor: url(/img/6283c376afcfc.png), auto
 }
 
 .my_img_warp{
@@ -246,4 +246,12 @@ img {
  /* animation: img-loaging-anis 3s ease-in-out 0s infinite alternate; */
   border-radius: 50%;
 }
+.custom_swal_style.swal2-popup{
+  width: 200px;
+}
+.custom_swal_style .swal2-content{
+  color: #fff;
+  font-size: 16px;
+}
+/* .swal_icon_comm */
     

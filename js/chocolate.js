@@ -23,7 +23,7 @@ $(function() {
 
           function c() { e = !(document.body.scrollTop > a) }
 
-          function s() { o = l.clientWidth, a = l.clientHeight, l.height = a "px", n.width = o, n.height = a }
+          function s() { o = l.clientWidth, a = l.clientHeight, l.height = a + "px", n.width = o, n.height = a }
 
           function h() {
               if (e)
@@ -34,7 +34,7 @@ $(function() {
           function f() {
               var t = this;
 
-              function e() { t.pos.x = Math.random() * o, t.pos.y = a 100 * Math.random(), t.alpha = .1 Math.random() * d.clearOffset, t.scale = .1 .3 * Math.random(), t.speed = Math.random(), "random" === d.color ? t.color = "rgba(" Math.floor(255 * Math.random()) ", " Math.floor(0 * Math.random()) ", " Math.floor(0 * Math.random()) ", " Math.random().toPrecision(2) ")" : t.color = d.color }
+              function e() { t.pos.x = Math.random() * o, t.pos.y = a+100 * Math.random(), t.alpha = .1 + Math.random() * d.clearOffset, t.scale = .1+ .3 * Math.random(), t.speed = Math.random(), "random" === d.color ? t.color = "rgba("+Math.floor(255 * Math.random())+", "+Math.floor(0 * Math.random())+", "+Math.floor(0 * Math.random())+", "+Math.random().toPrecision(2)+")": t.color = d.color }
               t.pos = {}, e(), this.draw = function() { t.alpha <= 0 && e(), t.pos.y -= t.speed, t.alpha -= 5e-4, r.beginPath(), r.arc(t.pos.x, t.pos.y, t.scale * d.radius, 0, 2 * Math.PI, !1), r.fillStyle = t.color, r.fill(), r.closePath() }
           }! function() {
               o = l.offsetWidth, a = l.offsetHeight,
