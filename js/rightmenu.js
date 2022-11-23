@@ -64,7 +64,6 @@ rmf.copyWordsLink = function () {
   txa.select();
   document.execCommand("Copy");
   document.body.removeChild(txa);
-  debugger
   Swal.fire("复制成功！");
 }
 rmf.switchReadMode = function () {
@@ -88,7 +87,6 @@ rmf.switchReadMode = function () {
 rmf.copySelect = function () {
   document.execCommand('Copy', false, null);
   //这里可以写点东西提示一下 已复制
-  console.log('我是复制了')
   Swal.fire({
     position: 'top-end',
     html: '<i class="fa-solid fa-circle-check swal_icon_comm" style="margin-right:10px"></i>复制成功',
@@ -109,10 +107,38 @@ rmf.translate = function () {
 
 // 右键菜单事件
 document.onkeydown = function (event) {
-  event = (event || window.event);
-  if (event.keyCode == 17) {
-      console.log("你知道的太多了");
-      return;
+  // if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return GLOBAL_CONFIG.Snackbar !== undefined &&btf.snackbarShow("你真坏，不能打开控制台喔!"), event.keyCode = 0, event.returnValue = !1, !1
+
+  const ev = (event || window.event)
+  const keyCode =ev.keyCode || ev.which || ev.charCode
+  const ctrlKey = ev.ctrlKey || ev.metaKey
+  const altKey = ev.altKey
+  const shiftKey = ev.shiftKey
+  //ctrl 17
+  if (ctrlKey) {
+      if(keyCode==67){
+        Swal.fire({
+          position: 'top-start',
+          html: '<i class="fa-solid fa-circle-check swal_icon_comm" style="margin-right:10px"></i>复制成功',
+          showConfirmButton: false,
+          customClass: 'custom_swal_style',
+          background: 'rgba(0, 255, 239, .4)',
+          timer: 2000
+        });
+        return
+      }
+      if(shiftKey&&keyCode==73){
+        Swal.fire({
+          position: 'top-end',
+          html: '<i class="fa-solid fa-circle-check swal_icon_comm" style="margin-right:10px"></i>已打开开发者模式，扒源请谨记GPL协议！',
+          showConfirmButton: false,
+          customClass: 'custom_swal_style',
+          background: 'rgba(0, 255, 239, .4)',
+          timer: 4000
+        });
+        return 
+      }
+      
   }
 }
 

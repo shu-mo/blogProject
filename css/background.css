@@ -214,20 +214,20 @@ svg.icon {
 }
 
 /* 鼠标样式代码 */
-body {
+/* body {
   cursor: url(/img/6283c365d20dd.png), auto;
-}
+} */
 
 .hide-block>.hide-button.open,
 .hide-inline>.hide-button.open {
   display: block
 }
 
-a,
+/* a,
 button,
 img {
   cursor: url(/img/6283c376afcfc.png), auto
-}
+} */
 
 .my_img_warp{
   background: #fff;
@@ -247,7 +247,8 @@ img {
   border-radius: 50%;
 }
 .custom_swal_style.swal2-popup{
-  width: 200px;
+  min-width: 200px;
+  width: auto;
 }
 .custom_swal_style .swal2-content{
   color: #fff;

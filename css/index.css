@@ -3338,6 +3338,112 @@ h1.page-title + .tag-cloud-list {
     transform: scale(0.7);
   }
 }
+#calendar a {
+  text-decoration: none;
+}
+.cal-head {
+  position: relative;
+  height: 20px;
+  padding: 8px 6px 2px 6px;
+  margin-bottom: 15px;
+}
+.cal-prev,
+.cal-next {
+  position: absolute;
+  top: 9px;
+  width: 9px;
+  height: 10px;
+  padding: 3px 4px;
+  border: 1px solid transparent;
+  color: #333;
+  outline: 0;
+}
+.cal-prev {
+  left: 8px;
+}
+.cal-prev:before {
+  border-right: 9px solid #333;
+}
+.cal-next {
+  right: 8px;
+}
+.cal-next:before {
+  border-left: 9px solid #333;
+}
+.cal-prev:before,
+.cal-next:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.cal-title {
+  width: 120px;
+  margin: 0 auto;
+  color: #333;
+  font: bold 14px/18px Arial;
+  text-align: center;
+}
+.cal-title a {
+  border: 1px solid transparent;
+  color: #f76b61;
+}
+.cal,
+.cal th,
+.cal td {
+  border: none;
+}
+.cal {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0;
+}
+.cal th {
+  background: rgba(0,0,0,0);
+  color: #000;
+  font-weight: 900 !important;
+}
+.cal tbody a {
+  background-color: #f76b61;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  border: 1px solid #fff;
+}
+.cal tbody .cal-today {
+  background-color: #ffdfdd;
+  color: #f76b61;
+}
+.cal .cal-gray {
+  color: #ddd;
+}
+.cal th,
+.cal td {
+  font-weight: normal;
+  line-height: 2.5625;
+  padding: 0;
+  text-align: center;
+}
+.cal-title a:hover,
+.cal-prev:hover,
+.cal-next:hover,
+.cal .cal-foot:hover,
+.cal .cal-foot:focus {
+  cursor: pointer;
+  background-color: transparent;
+  cursor: pointer;
+  color: #42d3d8;
+}
+.cal tbody a:hover,
+.cal tbody a:focus {
+  background-color: #ffdfdd;
+  color: #fff;
+  cursor: pointer;
+}
 #chatra:not(.chatra--expanded) {
   visibility: hidden !important;
   width: 1px !important;
@@ -3896,13 +4002,20 @@ h1.page-title + .tag-cloud-list {
   width: 50%;
   height: 100%;
   background-color: #333;
-  background-image: -webkit-linear-gradient(0deg, #c3aacb 0%, #9ec8f0 28%, #90e6c8 60%, #d6acd4 100%);
-  background-image: -moz-linear-gradient(0deg, #c3aacb 0%, #9ec8f0 28%, #90e6c8 60%, #d6acd4 100%);
-  background-image: -o-linear-gradient(0deg, #c3aacb 0%, #9ec8f0 28%, #90e6c8 60%, #d6acd4 100%);
-  background-image: -ms-linear-gradient(0deg, #c3aacb 0%, #9ec8f0 28%, #90e6c8 60%, #d6acd4 100%);
-  background-image: linear-gradient(90deg, #c3aacb 0%, #9ec8f0 28%, #90e6c8 60%, #d6acd4 100%);
+}
+#loading-box .loading-left-bg {
+  background-image: -webkit-radial-gradient(ellipse 200% 100% at 100% 50%, #077ff3, #a674f3, #581d16);
+  background-image: -moz-radial-gradient(ellipse 200% 100% at 100% 50%, #077ff3, #a674f3, #581d16);
+  background-image: -o-radial-gradient(ellipse 200% 100% at 100% 50%, #077ff3, #a674f3, #581d16);
+  background-image: -ms-radial-gradient(ellipse 200% 100% at 100% 50%, #077ff3, #a674f3, #581d16);
+  background-image: radial-gradient(ellipse 200% 100% at 100% 50%, #077ff3, #a674f3, #581d16);
 }
 #loading-box .loading-right-bg {
+  background-image: -webkit-radial-gradient(ellipse 200% 100% at 0% 50%, #077ff3, #a674f3, #581d16);
+  background-image: -moz-radial-gradient(ellipse 200% 100% at 0% 50%, #077ff3, #a674f3, #581d16);
+  background-image: -o-radial-gradient(ellipse 200% 100% at 0% 50%, #077ff3, #a674f3, #581d16);
+  background-image: -ms-radial-gradient(ellipse 200% 100% at 0% 50%, #077ff3, #a674f3, #581d16);
+  background-image: radial-gradient(ellipse 200% 100% at 0% 50%, #077ff3, #a674f3, #581d16);
   right: 0;
 }
 #loading-box .spinner-box {
@@ -3935,11 +4048,11 @@ h1.page-title + .tag-cloud-list {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
-  background-image: -webkit-linear-gradient(45deg, #ac19db 0%, #5986b1 28%, #2c9d76 60%, #e2da28 100%);
-  background-image: -moz-linear-gradient(45deg, #ac19db 0%, #5986b1 28%, #2c9d76 60%, #e2da28 100%);
-  background-image: -o-linear-gradient(45deg, #ac19db 0%, #5986b1 28%, #2c9d76 60%, #e2da28 100%);
-  background-image: -ms-linear-gradient(45deg, #ac19db 0%, #5986b1 28%, #2c9d76 60%, #e2da28 100%);
-  background-image: linear-gradient(45deg, #ac19db 0%, #5986b1 28%, #2c9d76 60%, #e2da28 100%);
+  background-image: -webkit-radial-gradient(ellipse 100% 100% at 50% 50%, #000, #fff, #000);
+  background-image: -moz-radial-gradient(ellipse 100% 100% at 50% 50%, #000, #fff, #000);
+  background-image: -o-radial-gradient(ellipse 100% 100% at 50% 50%, #000, #fff, #000);
+  background-image: -ms-radial-gradient(ellipse 100% 100% at 50% 50%, #000, #fff, #000);
+  background-image: radial-gradient(ellipse 100% 100% at 50% 50%, #000, #fff, #000);
   -webkit-animation: img-loaging-anis 3s ease-in-out 0s infinite alternate;
   -moz-animation: img-loaging-anis 3s ease-in-out 0s infinite alternate;
   -o-animation: img-loaging-anis 3s ease-in-out 0s infinite alternate;
@@ -4021,15 +4134,12 @@ h1.page-title + .tag-cloud-list {
   display: none;
 }
 @-moz-keyframes img-loaging-anis {
-  0% {
+  0%, 100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
   25% {
     -webkit-transform: scale(1.5);
@@ -4037,9 +4147,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
   }
   50% {
     -webkit-transform: scale(0.6);
@@ -4047,9 +4154,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(0.6);
     -ms-transform: scale(0.6);
     transform: scale(0.6);
-    opacity: 0.8;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
   }
   75% {
     -webkit-transform: scale(1.5);
@@ -4057,31 +4161,15 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
 @-webkit-keyframes img-loaging-anis {
-  0% {
+  0%, 100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
   25% {
     -webkit-transform: scale(1.5);
@@ -4089,9 +4177,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
   }
   50% {
     -webkit-transform: scale(0.6);
@@ -4099,9 +4184,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(0.6);
     -ms-transform: scale(0.6);
     transform: scale(0.6);
-    opacity: 0.8;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
   }
   75% {
     -webkit-transform: scale(1.5);
@@ -4109,31 +4191,15 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
 @-o-keyframes img-loaging-anis {
-  0% {
+  0%, 100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
   25% {
     -webkit-transform: scale(1.5);
@@ -4141,9 +4207,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
   }
   50% {
     -webkit-transform: scale(0.6);
@@ -4151,9 +4214,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(0.6);
     -ms-transform: scale(0.6);
     transform: scale(0.6);
-    opacity: 0.8;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
   }
   75% {
     -webkit-transform: scale(1.5);
@@ -4161,31 +4221,15 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
 @keyframes img-loaging-anis {
-  0% {
+  0%, 100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
   25% {
     -webkit-transform: scale(1.5);
@@ -4193,9 +4237,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
   }
   50% {
     -webkit-transform: scale(0.6);
@@ -4203,9 +4244,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(0.6);
     -ms-transform: scale(0.6);
     transform: scale(0.6);
-    opacity: 0.8;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
   }
   75% {
     -webkit-transform: scale(1.5);
@@ -4213,19 +4251,6 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
 @-moz-keyframes configure-clockwise {

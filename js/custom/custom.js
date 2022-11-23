@@ -1,10 +1,9 @@
 
 // 弹窗
-var OriginTitle = document.title;
-var titleTime;
+// var OriginTitle = document.title;
+// var titleTime;
 // let bodyWrap=document.getElementById('body-wrap')
 // window.addEventListener('load',()=>{
-//     debugger
 //     let dialogS1 = document.querySelector('#my_dialog_id')
 //     if(dialogS1){
 //       dialogS1.remove()
@@ -23,28 +22,29 @@ var titleTime;
 //     dialogS.appendChild(btns1)
 //     bodyWrap.appendChild(dialogS)
 // });
-document.addEventListener('visibilitychange', function() {
-  let dialogS1 = document.querySelector('#my_dialog_id')
-    if(dialogS1){
-      dialogS1.remove()
-    }
-    let bodyWrap=document.getElementById('body-wrap')
-    let dialogS =  document.createElement('div')
-    dialogS.innerHTML='欢迎再次来到' +'<span class="dialog_name">'+OriginTitle+"博客"+'</span>'+'<br>'+'望你找到你所需' 
-    dialogS.setAttribute('class','my_dialog_style')
-    dialogS.setAttribute('id','my_dialog_id')
-    let btns1 = document.createElement('span')
-    btns1.setAttribute('class',"fa-solid fa-check my_dialog_btn_style")
-    // btns1.innerHTML
-    btns1.onclick=function(){
-        dialogS.remove()
-    }
-    dialogS.appendChild(btns1)
-    bodyWrap.appendChild(dialogS)
-    if (document.hidden) {
-    } else {
-    }
-});
+// document.addEventListener('visibilitychange', function() {
+//   let dialogS1 = document.querySelector('#my_dialog_id')
+//     if(dialogS1){
+//       dialogS1.remove()
+//     }
+//     let bodyWrap=document.getElementById('body-wrap')
+//     let dialogS =  document.createElement('div')
+//     dialogS.innerHTML='欢迎再次来到' +'<span class="dialog_name">'+OriginTitle+"博客"+'</span>'+'<br>'+'望你找到你所需' 
+//     dialogS.setAttribute('class','my_dialog_style')
+//     dialogS.setAttribute('id','my_dialog_id')
+//     let btns1 = document.createElement('span')
+//     btns1.setAttribute('class',"fa-solid fa-check my_dialog_btn_style")
+//     // btns1.innerHTML
+//     btns1.onclick=function(){
+//         dialogS.remove()
+//     }
+//     dialogS.appendChild(btns1)
+//     bodyWrap.appendChild(dialogS)
+//     if (document.hidden) {
+//     } else {
+//     }
+// });
+
 // 鼠标跟随*掉落
 (function fairyDustCursor() {
 
